@@ -8,6 +8,19 @@
 또한, 실제 민감한 개인정보 및 회사 대외비 정보는 포함되지 않도록, **더미 데이터 생성 스크립트**(`create_dummy.py`)를 통해 안전하게 포트폴리오화하였습니다.  
 
 ---
+## ⚙️ 자동화 워크플로 (Automation Workflow)
+
+이 프로젝트는 GitHub Actions를 사용하여 특정 작업을 자동화합니다.
+
+### 더미 파일 자동 생성 및 커밋
+`generate_dummy_files.yml` 워크플로는 `test.py` 스크립트를 주기적으로 또는 수동으로 실행하여 더미 Excel 파일을 자동으로 생성하고 업데이트합니다. 이 워크플로는 다음 상황에서 자동으로 실행됩니다.
+
+- `main` 브랜치에 코드가 푸시될 때마다
+- 리포지토리의 'Actions' 탭에서 **'Run workflow'** 버튼을 수동으로 클릭할 때
+
+이 자동화 프로세스를 통해 항상 최신 상태의 더미 데이터 파일을 유지합니다.
+
+---
 
 ## ⚙️ 주요 기능
 - **상품 코드 추출**  
@@ -35,6 +48,7 @@
 [![glob](https://img.shields.io/badge/glob-000000?style=flat&logo=python&logoColor=white)](https://docs.python.org/3/library/glob.html)  
 
 ---
+
 
 ## 🚀 사용법
 
@@ -77,6 +91,7 @@ wb.save()
 
 🔒 데이터 보안
 본 프로젝트는 실제 데이터가 아닌 **더미 데이터(create_dummy.py)**를 사용하여 제작되었습니다.
+
 
 
 
