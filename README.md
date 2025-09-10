@@ -46,7 +46,10 @@
 [![pandas](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)  
 [![openpyxl](https://img.shields.io/badge/openpyxl-1F6FEB?style=flat&logo=microsoft-excel&logoColor=white)](https://openpyxl.readthedocs.io/)  
 [![glob](https://img.shields.io/badge/glob-000000?style=flat&logo=python&logoColor=white)](https://docs.python.org/3/library/glob.html)  
-![CI](https://github.com/USERNAME/REPOSITORY/actions/workflows/WORKFLOW_FILE.yml/badge.svg)
+[![CI](https://github.com/USERNAME/REPOSITORY/actions/workflows/ci.yml/badge.svg)](https://github.com/USERNAME/REPOSITORY/actions/workflows/ci.yml)  
+[![Lint](https://github.com/USERNAME/REPOSITORY/actions/workflows/lint.yml/badge.svg)](https://github.com/USERNAME/REPOSITORY/actions/workflows/lint.yml)  
+[![Deploy](https://github.com/USERNAME/REPOSITORY/actions/workflows/deploy.yml/badge.svg)](https://github.com/USERNAME/REPOSITORY/actions/workflows/deploy.yml)  
+
 
 
 ---
@@ -93,6 +96,7 @@ wb.save()
 
 🔒 데이터 보안
 본 프로젝트는 실제 데이터가 아닌 **더미 데이터(create_dummy.py)**를 사용하여 제작되었습니다.
+
 
 
 
