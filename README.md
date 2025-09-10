@@ -54,6 +54,7 @@ python test.py
 4. 결과
 성공적으로 실행되면,
 ➡️ 더미_상품리스트_업데이트.xlsx 파일이 새로 생성됩니다.
+<img src="https://github.com/euuuuuuan/excel-data-automation/blob/main/docs/screenshots/teminal_excute_result.png" alt="결과 이미지" width="300">
 
 📝 코드 설명
 glob.glob()
@@ -76,5 +77,6 @@ wb.save()
 
 🔒 데이터 보안
 본 프로젝트는 실제 데이터가 아닌 **더미 데이터(create_dummy.py)**를 사용하여 제작되었습니다.
+
 
 
