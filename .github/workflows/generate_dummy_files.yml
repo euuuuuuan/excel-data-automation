@@ -1,0 +1,35 @@
+name: Generate Dummy Files
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install openpyxl pandas
+
+      - name: Run script to generate dummy files
+        run: python test.py
+
+      - name: Commit and push dummy files
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add .
+          git commit -m "feat(ci): 자동 더미 파일 생성 및 업데이트" || echo "변경된 파일이 없습니다."
+          git push
